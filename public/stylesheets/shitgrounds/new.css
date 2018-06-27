@@ -1,0 +1,40 @@
+main, body {
+	height: 100%;
+}
+
+body {
+	background:
+		linear-gradient(135deg, #708090 22px, #d9ecff 22px, #d9ecff 24px, transparent 24px, transparent 67px, #d9ecff 67px, #d9ecff 69px, transparent 69px),
+		linear-gradient(225deg, #708090 22px, #d9ecff 22px, #d9ecff 24px, transparent 24px, transparent 67px, #d9ecff 67px, #d9ecff 69px, transparent 69px)0 64px;
+	background-color:#708090;
+	background-size: 64px 128px;
+	animation: changeBackgroundSize 12s ease-in-out infinite alternate;
+}
+
+body::before {
+	background: rgba(0, 0, 0, 0.65);
+	content: '';
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	z-index: -1;
+}
+
+form {
+	border: 1px outset #73925e;
+	padding: 3rem;
+	box-shadow: 1px 10px 22px 1px rgba(19, 171, 189, 0.4);
+	background-color: rgba(255, 255, 255, 0.95)
+}
+
+@keyframes changeBackgroundSize {
+    0%   {background-size: 64px 0;}
+    100% {background-size: 64 128px;}
+}
+
+#center-input {
+	display: block;
+	margin: 0 auto;
+}

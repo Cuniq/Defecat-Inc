@@ -1,0 +1,7 @@
+Shitgrounds model:
+
+Name
+Image
+
+
+//Average color image for background color: https://github.com/matkl/average-color/blob/gh-pages/average-color.js

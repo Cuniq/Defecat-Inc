@@ -1,0 +1,27 @@
+<%- include('../partial/header', {cssStyles: ['/stylesheets/shitgrounds/new.css']}); %>
+
+	<main class="d-flex align-items-center justify-content-center">
+		<form action="/shitgrounds" method="post">
+			<div class="form-group">
+				<label>
+					Ground name:
+					<input type="text" class="form-control" name="name" placeholder="name :)" required minlength="3" maxlength="16">
+				</label>
+			</div>
+			<div class="form-group">
+				<label>
+					Image url:
+					<input type="url" class="form-control" name="image" placeholder="http://linkto.image" required>
+				</label>
+			</div>
+			<div class="form-group">
+				<label>
+					Ground description:
+					<input type="text" class="form-control" name="description" placeholder="description" required>
+				</label>
+			</div>
+			<input id="center-input" type="submit" class="btn btn-primary" value="Add place">
+		</form>
+	</main>
+
+	<% include ../partial/footer %>

@@ -1,0 +1,53 @@
+<%- include('partial/header', {cssStyles: ['/stylesheets/index.css']}); %>
+
+	<header>
+		<nav class="navbar navbar-expand-sm navbar-dark fixed-top p-4" id="customNavBar">
+			<div class="container">
+
+				<a class="navbar-brand" href="#">
+					<!-- <img src="" alt=""> -->
+					Defecat Inc.
+				</a>
+
+				<!-- Button showed only when smaller than lg (from navbar-expand-lg)-->
+				<button class="navbar-toggler" type="button" data-toggle="collapse" data-target=".dual-collapse" aria-controls="collapseMenu"
+				 aria-expanded="false" aria-label="Toggle navigation">
+					<span class="navbar-toggler-icon"></span>
+				</button>
+
+				<div class="collapse navbar-collapse w-100 dual-collapse">
+					<div class="navbar-nav text-center">
+						<a class="nav-item nav-link" href="#">Home</a>
+						<a class="nav-item nav-link" href="#">Pricing</a>
+						<a class="nav-item nav-link" href="/shitgrounds">Find the perfect place</a>
+					</div>
+				</div>
+
+				<div class="collapse navbar-collapse w-100 dual-collapse">
+					<div class="navbar-nav ml-auto text-center">
+						<a class="nav-item nav-link" href="#">Sign in</a>
+						<a class="nav-item nav-link" href="#">Sign up</a>
+					</div>
+				</div>
+
+			</div>
+		</nav>
+	</header>
+
+	<div class="container d-flex flex-column h-100 align-items-center">
+		<main>
+			<div class="text-center">
+				<h1>
+					<strong>Discover new places to defecate</strong>
+				</h1>
+				<h3>
+					Take an extraordinary shit while being surrounded by impeccable view, with a mild breeze tingling your anus hair.
+				</h3>
+				<a href="/shitgrounds" class="btn btn-lg btn-outline-warning">
+					Ready to poop 💩
+				</a>
+			</div>
+		</main>
+	</div>
+
+	<% include partial/footer %>

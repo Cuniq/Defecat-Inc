@@ -1,0 +1,22 @@
+<%- include('../partial/header', {cssStyles: ['/stylesheets/shitgrounds/index.css']}); %>
+
+	<main>
+		<h1 class="text-center">Some times shit happens</h1>
+
+		<section class="container-fluid">
+			<div class="row">
+				<% shitgrounds.forEach(function(shitground){ %>
+					<div class="col-12 col-md-6 col-lg-4 mb-3">
+						<img src="<%= shitground.image %>" class="rounded w-100" alt="<%= shitground.name %>">
+						<div class="d-flex align-items-center">
+							<span class="figure-caption col text-center">
+								<%= shitground.name %>
+							</span>
+							<a href="/shitgrounds/<%= shitground._id %>" class="col btn btn-sm btn-info">Details</a>
+						</div>
+					</div>
+					<% }); %>
+			</div>
+		</section>
+	</main>
+	<% include ../partial/footer %>
